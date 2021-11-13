@@ -1,0 +1,15 @@
+{
+  "name": "{{project-name}}",
+  "private": true,
+  "devDependencies": {
+    "@aws-cdk/assert": "1.125.0",
+    "@types/node": "16.10.2",
+    "aws-cdk": "1.125.0",
+    "ts-node": "10.2.1",
+    "typescript": "4.4.3"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "1.125.0",
+    "@aws-cdk/core": "1.125.0"
+  }
+}

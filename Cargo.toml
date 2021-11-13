@@ -1,0 +1,24 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2018"
+default-run = "cli"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "bootstrap"
+path = "src/entry_lambda.rs"
+
+[[bin]]
+name = "cli"
+path = "src/entry_cli.rs"
+
+[dependencies]
+lambda_runtime = "^0.4"
+serde = "^1"
+serde_json = "^1"
+serde_derive = "^1"
+log = "^0.4"
+simple_logger = "^1"
+tokio = { version = "1.13.0", features = ["full"] }
+clap = "3.0.0-beta.5"
