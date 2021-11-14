@@ -14,13 +14,13 @@ package-x86:
 	zip -j target/aws-lambda-artifact.zip ./target/x86_64-unknown-linux-musl/release/bootstrap
 
 npm-install:
-	! [ -e node_modules ] && npm install || true
+	cd infrastructure; ! [ -e node_modules ] && npm install || true
 
 # Deployment uses only ARM right now. If you need to use x86, you can change the below targets.
 # And don't forget to change the CDK to use the x86 Lambda
 release: build-lambda-arm64 package-arm64
 
 deploy: npm-install release
-	cdk deploy
+	cd infrastructure; cdk deploy
 
 .PHONY: build-lambda build-cli release deploy
