@@ -10,7 +10,6 @@ In order to use this template, you need to install [cargo-generate](https://gith
 
 ```
 cargo generate --git https://github.com/hktonylee/aws-lambda-rust-template.git
-npm install
 ```
 
 ### Run locally
