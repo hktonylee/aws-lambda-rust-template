@@ -28,4 +28,4 @@ To deploy to AWS Lambda, you can use this command:
 make deploy
 ```
 
-The above code deploys to AWS Lambda using CDK. You can create additional resourcees, say CloudWatch Events, for scheduled run.
+The above code deploys to AWS Lambda using CDK. You can create additional resources, say CloudWatch Events, for scheduled run.
